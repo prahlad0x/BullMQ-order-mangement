@@ -1,9 +1,4 @@
-import { Badge } from '@chakra-ui/react'
-import { Code } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
-import { FaGithub } from 'react-icons/fa'
-
-# 🚀 BullMQ Order Management System <Badge colorScheme="green">v1.0.0</Badge>
+# 🚀 BullMQ Order Management System ![Version](https://img.shields.io/badge/version-1.0.0-green)
 
 > A modular and scalable **order management system** built with **Node.js**, **BullMQ**, and **Redis**, designed for managing distributed jobs, queues, and workers efficiently.  
 > This system demonstrates retry handling, job tracking, and real-time monitoring via Bull Board.
@@ -12,10 +7,10 @@ import { FaGithub } from 'react-icons/fa'
 
 ## 🧩 Repository
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-View%20Repo-black?logo=github)](https://github.com/prahlad0x/BullMQ-order-mangement)
+**GitHub Repo:** [https://github.com/prahlad0x/BullMQ-order-mangement](https://github.com/prahlad0x/BullMQ-order-mangement)
 
 ```bash
-https://github.com/prahlad0x/BullMQ-order-mangement.git
+git clone https://github.com/prahlad0x/BullMQ-order-mangement.git
 ```
 
 ---
@@ -52,7 +47,7 @@ BullMQ-order-mangement/
 │
 ├── .env.example               # Sample environment variables
 ├── package.json
-└── README.mdx
+└── README.md
 ```
 
 ---
@@ -105,8 +100,6 @@ and the **Bull Board Dashboard** available at **http://localhost:4000/admin/queu
 
 ### 🧵 Queue Creation
 
-Queues are created using **BullMQ**. Example:
-
 ```js
 import { Queue } from 'bullmq';
 import { redisConnection } from '../config/redis.js';
@@ -117,8 +110,6 @@ export const orderQueue = new Queue('orderQueue', { connection: redisConnection 
 ---
 
 ### ⚙️ Worker Setup
-
-The worker listens to incoming jobs and processes them:
 
 ```js
 import { Worker } from 'bullmq';
@@ -233,6 +224,4 @@ MIT © 2025 [Prahlad0x](https://github.com/prahlad0x)
 For discussions, feature requests, or contributions —  
 feel free to open an issue or PR on GitHub.
 
-<Box bg="gray.800" color="white" p={3} borderRadius="md">
-  <FaGithub /> <Code>github.com/prahlad0x/BullMQ-order-mangement</Code>
-</Box>
+🔗 **GitHub:** [github.com/prahlad0x/BullMQ-order-mangement](https://github.com/prahlad0x/BullMQ-order-mangement)
